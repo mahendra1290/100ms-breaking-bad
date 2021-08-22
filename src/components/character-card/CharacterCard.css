@@ -1,0 +1,7 @@
+p {
+  @apply text-gray-400 text-sm;
+}
+
+h1 {
+  @apply mb-2 text-white;
+}
