@@ -14,8 +14,12 @@ const CharacterCard = ({ character }) => {
         <p>Occupation</p>
         <h1>{character.occupation}</h1>
 
-        <p>Birth Date</p>
-        <h1>{character.birthday}</h1>
+        {character.birthday !== "Unknown" ? (
+          <>
+            <p>Birth Day</p>
+            <h1>{character.birthday}</h1>
+          </>
+        ) : null}
 
         <p>Status</p>
         <h1>{character.status}</h1>

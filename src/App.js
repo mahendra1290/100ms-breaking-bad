@@ -46,7 +46,7 @@ function App() {
 
   const [page, setPage] = useState(1);
 
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("unset");
 
   let location = useLocation();
 

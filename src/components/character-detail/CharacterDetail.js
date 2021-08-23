@@ -27,8 +27,12 @@ const CharacterDetail = () => {
           <p>Name</p>
           <h1 className="text-xl">{character.name}</h1>
 
-          <p>Birthday</p>
-          <h1>{character.birthday}</h1>
+          {character.birthday !== "Unknown" ? (
+            <>
+              <p>Birth Day</p>
+              <h1>{character.birthday}</h1>
+            </>
+          ) : null}
 
           <p>Occupation</p>
           <h1>{character.occupation}</h1>
