@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import axios from "axios";
 
 const BASE_URL = "https://www.breakingbadapi.com/api/";
@@ -11,7 +13,9 @@ axios.defaults.baseURL = BASE_URL;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root"),
 );

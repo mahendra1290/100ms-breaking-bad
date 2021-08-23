@@ -45,7 +45,9 @@ const CharacterDetail = () => {
           <p>Appeared In Seasons</p>
           <h1>
             {character?.appearance?.map((season) => (
-              <span className="mr-3">{season}</span>
+              <span key={season} className="mr-3">
+                {season}
+              </span>
             ))}
           </h1>
         </div>
