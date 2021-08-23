@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.outlined-input {
+  @apply block rounded-sm bg-gray-200 text-black mb-2 px-4 focus:outline-none focus:ring-transparent border-2;
+}
